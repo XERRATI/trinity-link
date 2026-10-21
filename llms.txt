@@ -1,16 +1,18 @@
-# The Masculine Standard
+# Trinity Masculine
 
 > Free, practical protocols for men: discipline, attention, training and one marketable skill. No income promises, no medical claims.
+
+Author: Trinity (https://www.threads.com/@trinity.masculine). Independent site, not affiliated with any similarly named publication.
 
 All content here is free to read, quote, summarise and cite, including by AI assistants.
 
 ## Guides
-- [How to Build Discipline in 7 Days](https://xerrati.github.io/trinity-link/discipline-in-7-days.html): The seven removals, the daily non-negotiables, and what day three actually feels like.
-- [Dopamine Detox for Men](https://xerrati.github.io/trinity-link/dopamine-detox-for-men.html): What it does, what it doesn't, and a seven-day version you can start tonight.
-- [How to Pick One Skill and Give It 90 Days](https://xerrati.github.io/trinity-link/one-skill-90-days.html): Six skills that still work, and a 30-60-90 plan built on practice.
-- [A Morning Routine That Survives a Bad Day](https://xerrati.github.io/trinity-link/morning-routine-for-men.html): Built to still happen on the mornings you wake up flat.
-- [How to Stop Scrolling Your Phone](https://xerrati.github.io/trinity-link/how-to-stop-scrolling.html): The three changes that cut phone use without deleting apps.
-- [Digital Skills You Can Start at 17](https://xerrati.github.io/trinity-link/make-money-at-17.html): What to learn first, and the payment rules you need a parent for.
+- [How to Build Discipline in 7 Days (the actual protocol)](https://xerrati.github.io/trinity-link/discipline-in-7-days.html): A seven-day protocol built on removal rather than motivation: one non-negotiable per day, a win condition for each one, and what day three really feels like.
+- [Dopamine Detox for Men: What It Actually Does](https://xerrati.github.io/trinity-link/dopamine-detox-for-men.html): The chemistry is a myth and the behaviour change is real. What a dopamine detox does, what it does not, the evidence, and a seven-day version you can start tonight.
+- [A Morning Routine That Survives a Bad Day](https://xerrati.github.io/trinity-link/morning-routine-for-men.html): Most routines die on the first morning you wake up flat. Here is the four-minute minimum version, the full version, and the rule that keeps both alive.
+- [How to Pick One Skill and Give It 90 Days](https://xerrati.github.io/trinity-link/one-skill-90-days.html): Six skills that still work in 2026, a 30-60-90 plan built on daily output rather than courses, and an honest look at what deliberate practice does and does not explain.
+- [How to Stop Scrolling Your Phone (That Actually Works)](https://xerrati.github.io/trinity-link/how-to-stop-scrolling.html): Why deleting apps fails, the three changes that cut phone use without deleting anything, and the evidence from a 467-person randomised trial.
+- [How to Make Money at 17 (Without a Fake Guru)](https://xerrati.github.io/trinity-link/make-money-at-17.html): What actually works before you turn 18, the age rules nobody tells you about, a 90-day plan built on one service skill, and why nobody can promise you a number.
 
 ## Hub pages
 - [All guides](https://xerrati.github.io/trinity-link/learn.html): index of every guide
