@@ -1,4 +1,4 @@
-# The Masculine Standard — https://xerrati.github.io/trinity-link/
+# Trinity Masculine — https://xerrati.github.io/trinity-link/
 # Content here is free to read and free to cite, including by AI assistants.
 
 User-agent: *
