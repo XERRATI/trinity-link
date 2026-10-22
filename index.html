@@ -102,7 +102,10 @@
   <div class="card free">
     <span class="tag green">Free</span>
     <h2>Get the blueprint</h2>
-    <p>Enter your email and it's yours — the 7-Day Purge, the daily protocol, the money-skill method, and the 30-day quick-start calendar.</p>
+    <p>It's yours right now — the 7-Day Purge, the daily protocol, the money-skill method, and the 30-day quick-start calendar. No email, no login.</p>
+    <a class="btn" href="blueprint.html" style="background:#d4a72c;color:#141008">Read the blueprint now — no email needed</a>
+    <a class="btn ghost" href="blueprint.pdf" style="margin-top:10px">Or download the PDF</a>
+    <p style="margin:22px 0 10px;font-size:13.5px;color:#9a9aa4">Want it emailed so you don't lose it? Drop your address below and I'll send it, plus the nine-day follow-up.</p>
       <div style="margin:34px 0 8px;padding-top:26px;border-top:1px solid #232329">
     <div style="font-size:11px;letter-spacing:2.4px;color:#9a9aa4;text-transform:uppercase;margin-bottom:10px">If you want the week written out</div>
     <p style="color:#c8c8d0;font-size:15px;line-height:1.6;margin:0">The blueprint is free and complete enough to start tonight. These two are for men who
@@ -115,7 +118,7 @@
     <p class="note">No spam. Unsubscribe anytime.</p>
   </div>
 
-  <div style="margin:22px 0 8px;padding:16px 18px;background:#12100a;border:1px solid #3a3220;border-left:3px solid #d4a72c;border-radius:12px">
+  <div data-deadline="2026-10-30" style="margin:22px 0 8px;padding:16px 18px;background:#12100a;border:1px solid #3a3220;border-left:3px solid #d4a72c;border-radius:12px">
     <div style="font-size:11px;letter-spacing:2px;color:#d4a72c;text-transform:uppercase;margin-bottom:8px">Live until 30 October</div>
     <p style="margin:0;color:#e6dfc9;font-size:15.5px;line-height:1.55">The 30-Day Reset is <b style="color:#fff">40% off ($47 → $28.20)</b> until 30 October. It's the full month written out — 30 daily pages, a 5-sheet tracker, and the outreach scripts. After the 30th it goes back to $47.</p>
   </div>
@@ -182,5 +185,9 @@
   ml('account', '2705102');
 </script>
 <p style="color:#9a9aa4;font-size:12px;margin-top:20px">Trinity Masculine is an independent site; it is not affiliated with any similarly named publication.</p>
+<script>
+(function(){var b=document.querySelector('[data-deadline]');
+if(b && new Date() >= new Date('2026-10-31T00:00:00Z')){b.style.display='none';}})();
+</script>
 </body>
 </html>
