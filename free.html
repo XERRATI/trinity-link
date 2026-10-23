@@ -94,4 +94,20 @@ l=d.createElement(e);l.async=1;l.src=u;n=d.getElementsByTagName(e)[0];n.parentNo
 (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
 ml('account', '2705102');
 </script>
+<script>
+/* Funnel counter. No account, no cookie, no personal data - it increments a
+   public counter and returns a 1x1 image. Threads removed link-click stats in
+   September 2026, so without this a click is invisible. */
+(function(){
+  function ping(p){var i=new Image();i.style.position='absolute';i.width=1;i.height=1;
+    i.alt='';i.src='https://hits.sh/xerrati.github.io/trinity-link/'+p+'.svg?n='+Date.now();}
+  ping('pv-free');
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a'):null;
+    if(!a||!a.href)return;
+    if(a.href.indexOf('payhip.com/b/wRp6j')>-1)ping('clk-purge');
+    else if(a.href.indexOf('payhip.com/b/Ywxmf')>-1)ping('clk-reset');
+  },true);
+})();
+</script>
 </body></html>
