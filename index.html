@@ -43,7 +43,7 @@
  {"@type":"Question","name":"What is the 7-Day Purge?",
   "acceptedAnswer":{"@type":"Answer","text":"Seven days, seven removals. Porn, scrolling, weed, sugar, late nights, video games and the phone in the morning. Each day has a win condition, a craving card, and a rule for what to do if you slip."}},
  {"@type":"Question","name":"Is the blueprint actually free?",
-  "acceptedAnswer":{"@type":"Answer","text":"Yes. The Discipline-to-Income Blueprint is free and opens immediately. Two optional paid versions exist: the 7-Day Purge at $19 and the 30-Day Reset at $28.20."}},
+  "acceptedAnswer":{"@type":"Answer","text":"Yes. The Discipline-to-Income Blueprint is free and opens immediately. Two optional paid versions exist: the 7-Day Purge at $19 and the 30-Day Reset, priced on the page."}},
  {"@type":"Question","name":"Do I need money to start?",
   "acceptedAnswer":{"@type":"Answer","text":"No. The protocol costs nothing. The money skill section uses free tools, and the first stage is practice and samples, not spending."}}]}
 ]}
@@ -163,7 +163,7 @@
       <tr style="border-top:1px solid #232329"><td style="padding:9px 6px;color:#c8c8d0">Refund</td><td style="padding:9px 6px;color:#9a9aa4">—</td><td style="padding:9px 6px;color:#c8c8d0">7 days</td><td style="padding:9px 6px;color:#c8c8d0">14 days</td></tr>
     </table>
   </div>
-<div class="price"><span class="now">$28.20</span><span class="was">$47</span><span class="save">40% off — offer ends 30 October</span></div>
+<div class="price" id="reset-price"><span class="now">$28.20</span><span class="was">$47</span><span class="save">40% off — offer ends 30 October</span></div>
     <a class="btn" href="https://payhip.com/b/Ywxmf">Get the 30-Day Reset</a>
     <p class="note">14-day refund promise. Instant access — PDF + tracker.</p>
   </div>
@@ -186,8 +186,16 @@
 </script>
 <p style="color:#9a9aa4;font-size:12px;margin-top:20px">Trinity Masculine is an independent site; it is not affiliated with any similarly named publication.</p>
 <script>
-(function(){var b=document.querySelector('[data-deadline]');
-if(b && new Date() >= new Date('2026-10-31T00:00:00Z')){b.style.display='none';}})();
+(function(){
+// After 30 Oct the checkout charges $47. The page must never show a price the
+// checkout does not charge, so the card flips itself over rather than waiting
+// for someone to remember to edit it.
+if(new Date() >= new Date('2026-10-31T00:00:00Z')){
+  var b=document.querySelector('[data-deadline]');
+  if(b){b.style.display='none';}
+  var p=document.getElementById('reset-price');
+  if(p){p.innerHTML='<span class="now">$47</span>';}
+}})();
 </script>
 </body>
 </html>
