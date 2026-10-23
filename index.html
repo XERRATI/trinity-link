@@ -120,7 +120,7 @@
 
   <div data-deadline="2026-10-30" style="margin:22px 0 8px;padding:16px 18px;background:#12100a;border:1px solid #3a3220;border-left:3px solid #d4a72c;border-radius:12px">
     <div style="font-size:11px;letter-spacing:2px;color:#d4a72c;text-transform:uppercase;margin-bottom:8px">Live until 30 October</div>
-    <p style="margin:0;color:#e6dfc9;font-size:15.5px;line-height:1.55">The 30-Day Reset is <b style="color:#fff">40% off ($47 → $28.20)</b> until 30 October. It's the full month written out — 30 daily pages, a 5-sheet tracker, and the outreach scripts. After the 30th it goes back to $47.</p>
+    <p id="reset-note" style="margin:0;color:#e6dfc9;font-size:15.5px;line-height:1.55">The 30-Day Reset is <b style="color:#fff">40% off ($47 → $28.20)</b> until 30 October. It's the full month written out — 30 daily pages, a 5-sheet tracker, and the outreach scripts. After the 30th it goes back to $47.</p>
   </div>
 
   <div class="card paid">
@@ -154,7 +154,7 @@
     <div style="font-size:11px;letter-spacing:2.4px;color:#d4a72c;text-transform:uppercase;margin-bottom:14px">Which one</div>
     <table style="width:100%;border-collapse:collapse;font-size:14px">
       <tr style="color:#9a9aa4;font-size:11px;letter-spacing:1px;text-transform:uppercase">
-        <td style="padding:8px 6px"> </td><td style="padding:8px 6px">Free</td><td style="padding:8px 6px">$19 Purge</td><td style="padding:8px 6px">$28.20 Reset</td></tr>
+        <td style="padding:8px 6px"> </td><td style="padding:8px 6px">Free</td><td style="padding:8px 6px">$19 Purge</td><td id="reset-cell" style="padding:8px 6px">$28.20 Reset</td></tr>
       <tr style="border-top:1px solid #232329"><td style="padding:9px 6px;color:#c8c8d0">The 7 removals</td><td style="padding:9px 6px;color:#7ee2a8">Yes</td><td style="padding:9px 6px;color:#7ee2a8">Yes</td><td style="padding:9px 6px;color:#7ee2a8">Yes</td></tr>
       <tr style="border-top:1px solid #232329"><td style="padding:9px 6px;color:#c8c8d0">Day-by-day win conditions</td><td style="padding:9px 6px;color:#9a9aa4">Outline</td><td style="padding:9px 6px;color:#7ee2a8">7 days</td><td style="padding:9px 6px;color:#7ee2a8">30 days</td></tr>
       <tr style="border-top:1px solid #232329"><td style="padding:9px 6px;color:#c8c8d0">Craving emergency card</td><td style="padding:9px 6px;color:#9a9aa4">—</td><td style="padding:9px 6px;color:#7ee2a8">Yes</td><td style="padding:9px 6px;color:#7ee2a8">Yes</td></tr>
@@ -195,6 +195,10 @@ if(new Date() >= new Date('2026-10-31T00:00:00Z')){
   if(b){b.style.display='none';}
   var p=document.getElementById('reset-price');
   if(p){p.innerHTML='<span class="now">$47</span>';}
+  var n=document.getElementById('reset-note');
+  if(n){n.innerHTML='The 30-Day Reset is back to its full price of $47. It is the full month written out — 30 daily pages, a 5-sheet tracker, and the outreach scripts.';}
+  var c=document.getElementById('reset-cell');
+  if(c){c.textContent='$47 Reset';}
 }})();
 </script>
 <script>

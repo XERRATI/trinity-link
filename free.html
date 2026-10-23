@@ -102,6 +102,25 @@ ml('account', '2705102');
   function ping(p){var i=new Image();i.style.position='absolute';i.width=1;i.height=1;
     i.alt='';i.src='https://hits.sh/xerrati.github.io/trinity-link/'+p+'.svg?n='+Date.now();}
   ping('pv-free');
+  /* Email capture: two signals, because the embed can render inline OR in an
+     iframe. focusin catches the inline case; the observer catches the success
+     state either way. MailerLite's own group count is the authoritative number. */
+  document.addEventListener('focusin',function(e){
+    var t=e.target;if(!t)return;
+    if(!t.closest)return;
+    if(t.closest('.ml-embedded,form'))ping('eml-start-free');
+  },true);
+  (function(){
+    var fired=false;
+    new MutationObserver(function(){
+      if(fired)return;
+      var b=document.body?document.body.innerText:'';
+      if(/thank|success|subscribed|check your inbox|almost there/i.test(b)){
+        fired=true;ping('eml-done-free');
+      }
+    }).observe(document.documentElement,{subtree:true,childList:true,characterData:true});
+  })();
+
   document.addEventListener('click',function(e){
     var a=e.target&&e.target.closest?e.target.closest('a'):null;
     if(!a||!a.href)return;
